@@ -69,13 +69,37 @@ curl -L \
   -o /ComfyUI/models/loras/sh00tz_HN_75.safetensors \
   "https://civitai.com/api/download/models/2731730?type=Model&format=SafeTensor"
 
-  echo "  -> shoot LN Wan I2V High LoRA..."
+echo "  -> shoot LN Wan I2V High LoRA..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/sh00tz_LN_75.safetensors \
   "https://civitai.com/api/download/models/2731744?type=Model&format=SafeTensor"
 
-echo "  -> Oral Insertion LoRA (High + Low)..."
+echo "  -> Facials Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/facials_epoch_50.safetensors \
+  "https://civitai.com/api/download/models/1542133?type=Model&format=SafeTensor"
+
+echo "  ->  Anime Cumshot Wan I2V low LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/56Low noise-Cumshot Aesthetics.safetensors \
+  "https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
+
+echo "  ->  Anime Cumshot Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/23High noise-Cumshot Aesthetics.safetensors \
+  "https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
+
+echo "  ->  Thiccum Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/wan-thiccum-v3.safetensors \
+  "https://civitai.com/api/download/models/1860691?type=Model&format=SafeTensor"
+  
+  echo "  -> Oral Insertion LoRA (High + Low)..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/oral_insertion.zip \
