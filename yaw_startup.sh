@@ -98,8 +98,14 @@ curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/wan-thiccum-v3.safetensors \
   "https://civitai.com/api/download/models/1860691?type=Model&format=SafeTensor"
+
+echo "  ->  BBC Deepthroat I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/wan22-bbcdeepthroat-115epoc-high-k3nk.safetensors \
+  "https://civitai.com/api/download/models/2370687?type=Model&format=SafeTensor"
   
-  echo "  -> Oral Insertion LoRA (High + Low)..."
+echo "  -> Oral Insertion LoRA (High + Low)..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/oral_insertion.zip \
