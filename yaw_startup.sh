@@ -57,12 +57,18 @@ curl -L \
   -o /ComfyUI/models/loras/wan_2.2_i2v_gagging_low_v1.0.safetensors \
   "https://civitai.com/api/download/models/2407028?type=Model&format=SafeTensor"
 
-echo "  -> Dr34ml4y NSFW Wan I2V High LoRA..."
+echo "  -> Dr34ml4y NSFW Wan I2V Low LoRA..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/DR34ML4Y_I2V_14B_LOW_V2.safetensors \
   "https://civitai.com/api/download/models/2553271?type=Model&format=SafeTensor"
 
+echo "  -> Dr34ml4y NSFW Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/DR34ML4Y_I2V_14B_HIGH_V2.safetensors \
+  "https://civitai.com/api/download/models/2553151?type=Model&format=SafeTensor"
+  
 echo "  -> SH00TZ Wan I2V High LoRA..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
@@ -81,37 +87,12 @@ curl -L \
   -o /ComfyUI/models/loras/facials_epoch_50.safetensors \
   "https://civitai.com/api/download/models/1542133?type=Model&format=SafeTensor"
 
-echo "  ->  Anime Cumshot Wan I2V low LoRA..."
-curl -L \
-  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
-  -o /ComfyUI/models/loras/56Low noise-Cumshot Aesthetics.safetensors \
-  "https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
-
-echo "  ->  Anime Cumshot Wan I2V High LoRA..."
-curl -L \
-  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
-  -o /ComfyUI/models/loras/23High noise-Cumshot Aesthetics.safetensors \
-  "https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
-
 echo "  ->  Thiccum Wan I2V High LoRA..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/wan-thiccum-v3.safetensors \
   "https://civitai.com/api/download/models/1860691?type=Model&format=SafeTensor"
 
-echo "  ->  BBC Deepthroat I2V High LoRA..."
-curl -L \
-  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
-  -o /ComfyUI/models/loras/wan22-bbcdeepthroat-115epoc-high-k3nk.safetensors \
-  "https://civitai.com/api/download/models/2370687?type=Model&format=SafeTensor"
-  
-echo "  -> Oral Insertion LoRA (High + Low)..."
-curl -L \
-  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
-  -o /ComfyUI/models/loras/oral_insertion.zip \
-  "https://civitai.com/api/download/models/2121297?type=Model&format=SafeTensor"
-unzip /ComfyUI/models/loras/oral_insertion.zip -d /ComfyUI/models/loras/
-rm /ComfyUI/models/loras/oral_insertion.zip
 
 # --- CIVITAI LORA TEMPLATE ---
 # Uncomment and fill in to add a CivitAI LoRA:
