@@ -39,6 +39,42 @@ fi
 #  Copy and paste a block for each LoRA you want to add
 # ============================================================
 
+echo "  -> Hard Cut 3 Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/hard_cut_3_wan_i2v_high.safetensors \
+  "https://civitai.com/api/download/models/2446376?type=Model&format=SafeTensor"
+
+echo "  -> Gagging Wan I2v High Lora ..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/wan_2.2_i2v_gagging_high_v1.0.safetensors \
+  "https://civitai.com/api/download/models/2407012?type=Model&format=SafeTensor"
+  
+echo "  -> Gagging Wan I2V Low LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/wan_2.2_i2v_gagging_low_v1.0.safetensors \
+  "https://civitai.com/api/download/models/2407028?type=Model&format=SafeTensor"
+
+echo "  -> Dr34ml4y NSFW Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/DR34ML4Y_I2V_14B_LOW_V2.safetensors \
+  "https://civitai.com/api/download/models/2553271?type=Model&format=SafeTensor"
+
+echo "  -> SH00TZ Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/sh00tz_HN_75.safetensors \
+  "https://civitai.com/api/download/models/2731730?type=Model&format=SafeTensor"
+
+  echo "  -> shoot LN Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/sh00tz_LN_75.safetensors \
+  "https://civitai.com/api/download/models/2731744?type=Model&format=SafeTensor"
+
 # --- CIVITAI LORA TEMPLATE ---
 # Uncomment and fill in to add a CivitAI LoRA:
 #
