@@ -22,7 +22,7 @@ echo "============================================================"
 echo ""
 
 # --- Directories ---
-mkdir -p /workspace/ComfyUI/models/loras/WAN
+mkdir -p /ComfyUI/models/loras
 
 # Pull CivitAI token from RunPod environment variable
 # Set this in your pod's Environment Variables as: civitai_token = your_token_here
@@ -45,7 +45,7 @@ fi
 # echo "  -> Your LoRA Name Here..."
 # curl -L \
 #   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-#   -o /workspace/ComfyUI/models/loras/WAN/YOUR_LORA_FILENAME.safetensors \
+#   -o /ComfyUI/models/loras/YOUR_LORA_FILENAME.safetensors \
 #   "https://civitai.com/api/download/models/REPLACE_WITH_MODEL_ID?type=Model&format=SafeTensor"
 
 
@@ -55,7 +55,7 @@ fi
 # echo "  -> Your LoRA Name Here..."
 # hf download REPO/NAME \
 #   filename.safetensors \
-#   --local-dir /workspace/ComfyUI/models/loras/WAN
+#   --local-dir /ComfyUI/models/loras
 
 
 # ============================================================
