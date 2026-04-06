@@ -75,6 +75,14 @@ curl -L \
   -o /ComfyUI/models/loras/sh00tz_LN_75.safetensors \
   "https://civitai.com/api/download/models/2731744?type=Model&format=SafeTensor"
 
+echo "  -> Oral Insertion LoRA (High + Low)..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/oral_insertion.zip \
+  "https://civitai.com/api/download/models/2121297?type=Model&format=SafeTensor"
+unzip /ComfyUI/models/loras/oral_insertion.zip -d /ComfyUI/models/loras/
+rm /ComfyUI/models/loras/oral_insertion.zip
+
 # --- CIVITAI LORA TEMPLATE ---
 # Uncomment and fill in to add a CivitAI LoRA:
 #
