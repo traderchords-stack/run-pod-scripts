@@ -69,7 +69,7 @@ curl -L \
   -o /ComfyUI/models/loras/sh00tz_HN_75.safetensors \
   "https://civitai.com/api/download/models/2731730?type=Model&format=SafeTensor"
 
-echo "  -> shoot LN Wan I2V High LoRA..."
+echo "  -> SH00TZ Wan I2V Low LoRA..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/sh00tz_LN_75.safetensors \
