@@ -93,6 +93,33 @@ curl -L \
   -o /ComfyUI/models/loras/wan-thiccum-v3.safetensors \
   "https://civitai.com/api/download/models/1860691?type=Model&format=SafeTensor"
 
+echo "  ->  Anime Cumshot Wan I2V Low LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/56Low noise-Cumshot Aesthetics.safetensors \
+  "https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
+  
+echo "  ->  Anime Cumshot Wan I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/23High noise-Cumshot Aesthetics.safetensors \
+  "https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
+
+echo "  ->  Wan Cumshot I2V LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/wan_cumshot_i2v.safetensors \
+  "https://civitai.com/api/download/models/1602715?type=Model&format=SafeTensor"
+  
+echo "  -> Oral Insertion High LoRA..."
+curl -L \
+  -o /ComfyUI/models/loras/wan2.2-i2v-high-oral-insertion-v1.0.safetensors \
+  "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-high-oral-insertion-v1.0.safetensors?download=true"
+
+echo "  -> Oral Insertion Low LoRA..."
+curl -L \
+  -o /ComfyUI/models/loras/wan2.2-i2v-low-oral-insertion-v1.0.safetensors \
+  "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-low-oral-insertion-v1.0.safetensors?download=true"
 
 # --- CIVITAI LORA TEMPLATE ---
 # Uncomment and fill in to add a CivitAI LoRA:
