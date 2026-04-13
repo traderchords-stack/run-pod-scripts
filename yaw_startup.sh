@@ -115,7 +115,7 @@ echo "  ->  WAN 2.2 Anime Cumshot Aesthetics – High I2V..."
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
   -o /ComfyUI/models/loras/wan_2_2_anime_cumshot_aesthetics_high.safetensors \
-  "https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
+  "https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
 # --- CIVITAI LORA TEMPLATE ---
 # Uncomment and fill in to add a CivitAI LoRA:
 #
