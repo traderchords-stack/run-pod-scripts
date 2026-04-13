@@ -116,6 +116,18 @@ curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
   -o /ComfyUI/models/loras/wan_cumshot_i2v.safetensors \
   "https://civitai.com/api/download/models/1602715?type=Model&format=SafeTensor"
+
+echo "  ->  Smoothmix Animations High I2V LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/SmoothMixAnimation_High.safetensors \
+  "https://civitai.com/api/download/models/2309690?type=Model&format=SafeTensor"
+
+echo "  ->  Smoothmix Animations Low I2V LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/SmoothMixAnimation_Low.safetensors \
+  "https://civitai.com/api/download/models/2309689?type=Model&format=SafeTensor"
   
 echo "  -> Oral Insertion High LoRA..."
 curl -L \
