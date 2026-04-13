@@ -105,6 +105,12 @@ curl -L \
   -o /ComfyUI/models/loras/23High noise-Cumshot Aesthetics.safetensors \
   "https://civitai.com/api/download/models/2116008?type=Model&format=SafeTensor"
 
+  echo "  ->  Wan Nipple Fix I2V High LoRA..."
+curl -L \
+  -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
+  -o /ComfyUI/models/loras/breasts-wan-e7.safetensors \
+  "https://civitai.com/api/download/models/2156804?type=Model&format=SafeTensor"
+  
 echo "  ->  Wan Cumshot I2V LoRA..."
 curl -L \
   -H "Authorization: Bearer cde9ea9e6fb29a0c5fda3358583224a4" \
