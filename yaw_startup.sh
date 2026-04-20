@@ -138,6 +138,30 @@ curl -L \
   "https://civitai.red/api/download/models/2376136?type=Model&format=SafeTensor"
 echo "  ->  SmoothXXXAnimation_High..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/wan22-bbcdeepthroat-115epoc-high-k3nk.safetensors \
+  "https://civitai.red/api/download/models/2370687?type=Model&format=SafeTensor"
+echo "  ->  wan22-bbcdeepthroat-115epoc-high-k3nk..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/wan22-bbcdeepthroat-155epoc-low-720-k3nk..safetensors \
+  "https://civitai.red/api/download/models/2370744?type=Model&format=SafeTensor"
+echo "  ->  wan22-bbcdeepthroat-155epoc-low-720-k3nk...."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/wan22-ultimatedeepthroat-i2v-102epoc-high-k3nk.safetensors \
+  "https://civitai.red/api/download/models/2325788?type=Model&format=SafeTensor"
+echo "  ->  wan22-ultimatedeepthroat-i2v-102epoc-high-k3nk..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/wan22-ultimatedeepthroat-I2V-101epoc-low-k3nk.safetensors \
+  "https://civitai.red/api/download/models/2191446?type=Model&format=SafeTensor"
+echo "  ->  wan22-ultimatedeepthroat-I2V-101epoc-low-k3nk..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
