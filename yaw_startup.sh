@@ -134,33 +134,21 @@ echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/SmoothXXXAnimation_High.safetensors \
-  "https://civitai.red/api/download/models/2376136?type=Model&format=SafeTensor"
-echo "  ->  SmoothXXXAnimation_High..."
+  -o /ComfyUI/models/loras/l3z_kiss_12v.safetensors \
+  "https://civitai.red/api/download/models/1792573?type=Model&format=SafeTensor"
+echo "  ->  l3z_kiss_12v..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/wan22-bbcdeepthroat-115epoc-high-k3nk.safetensors \
-  "https://civitai.red/api/download/models/2370687?type=Model&format=SafeTensor"
-echo "  ->  wan22-bbcdeepthroat-115epoc-high-k3nk..."
+  -o /ComfyUI/models/loras/genitals_helper_v1.0_e219.safetensors \
+  "https://civitai.red/api/download/models/2012120?type=Model&format=SafeTensor"
+echo "  ->  genitals_helper_v1.0_e219..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/wan22-bbcdeepthroat-155epoc-low-720-k3nk..safetensors \
-  "https://civitai.red/api/download/models/2370744?type=Model&format=SafeTensor"
-echo "  ->  wan22-bbcdeepthroat-155epoc-low-720-k3nk...."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/wan22-ultimatedeepthroat-i2v-102epoc-high-k3nk.safetensors \
-  "https://civitai.red/api/download/models/2325788?type=Model&format=SafeTensor"
-echo "  ->  wan22-ultimatedeepthroat-i2v-102epoc-high-k3nk..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/wan22-ultimatedeepthroat-I2V-101epoc-low-k3nk.safetensors \
-  "https://civitai.red/api/download/models/2191446?type=Model&format=SafeTensor"
-echo "  ->  wan22-ultimatedeepthroat-I2V-101epoc-low-k3nk..."
+  -o /ComfyUI/models/loras/ahegao_v1_e35_wan.safetensors \
+  "https://civitai.red/api/download/models/1571626?type=Model&format=SafeTensor"
+echo "  ->  ahegao_v1_e35_wan..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
