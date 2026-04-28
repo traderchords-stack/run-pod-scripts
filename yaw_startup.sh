@@ -150,6 +150,12 @@ curl -L \
   "https://civitai.red/api/download/models/1792573?type=Model&format=SafeTensor"
 echo "  ->  l3z_kiss..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/genitals_helper.safetensors \
+  "https://civitai.red/api/download/models/2012120?type=Model&format=SafeTensor"
+echo "  ->  genitals_helper..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
