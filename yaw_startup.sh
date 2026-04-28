@@ -100,18 +100,6 @@ echo "  ->  wan_cumshot_i2v..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/SmoothMixAnimation_High.safetensors \
-  "https://civitai.com/api/download/models/2309690?type=Model&format=SafeTensor"
-echo "  ->  SmoothMixAnimation_High..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/SmoothMixAnimation_Low.safetensors \
-  "https://civitai.com/api/download/models/2309689?type=Model&format=SafeTensor"
-echo "  ->  SmoothMixAnimation_Low..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
   -o /ComfyUI/models/loras/wan_2_2_anime_cumshot_aesthetics_low.safetensors \
   "https://civitai.com/api/download/models/2116027?type=Model&format=SafeTensor"
 echo "  ->  wan_2_2_anime_cumshot_aesthetics_low..."
@@ -131,24 +119,6 @@ curl -L \
   -o /ComfyUI/models/loras/wan2.2-i2v-low-oral-insertion-v1.0.safetensors \
   "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-low-oral-insertion-v1.0.safetensors?download=true"
 echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/l3z_kiss_12v.safetensors \
-  "https://civitai.red/api/download/models/1792573?type=Model&format=SafeTensor"
-echo "  ->  l3z_kiss_12v..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/genitals_helper_v1.0_e219.safetensors \
-  "https://civitai.red/api/download/models/2012120?type=Model&format=SafeTensor"
-echo "  ->  genitals_helper_v1.0_e219..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/ahegao_v1_e35_wan.safetensors \
-  "https://civitai.red/api/download/models/1571626?type=Model&format=SafeTensor"
-echo "  ->  ahegao_v1_e35_wan..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
