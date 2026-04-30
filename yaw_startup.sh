@@ -122,57 +122,9 @@ echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/SmoothXXXAnimation_High.safetensors \
-  "https://civitai.red/api/download/models/2376136?type=Model&format=SafeTensor"
-echo "  ->  SmoothXXXAnimation_High..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/SmoothXXXAnimation_Low.safetensors \
-  "https://civitai.red/api/download/models/2376143?type=Model&format=SafeTensor"
-echo "  ->  SmoothXXXAnimation_Low..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Ultimatedeepthroat-high.safetensors \
-  "https://civitai.red/api/download/models/2325788?type=Model&format=SafeTensor"
-echo "  ->  Ultimatedeepthroat-high..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Ultimate-deepthroat-low.safetensors \
-  "https://civitai.red/api/download/models/2191446?type=Model&format=SafeTensor"
-echo "  ->  Ultimate-deepthroat-low..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/l3z_kiss.safetensors \
-  "https://civitai.red/api/download/models/1792573?type=Model&format=SafeTensor"
-echo "  ->  l3z_kiss..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/genitals_helper.safetensors \
-  "https://civitai.red/api/download/models/2012120?type=Model&format=SafeTensor"
-echo "  ->  genitals_helper..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/pov_blowjob.safetensors \
-  "https://civitai.red/api/download/models/2021249?type=Model&format=SafeTensor"
-echo "  ->  pov_blowjob..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/ahegao_face.safetensors \
-  "https://civitai.red/api/download/models/1571626?type=Model&format=SafeTensor"
-echo "  ->  ahegao_face..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/doggypov.safetensors \
-  "https://civitai.red/api/download/models/1545040?type=Model&format=SafeTensor"
-echo "  ->  doggypov..."
+  -o /ComfyUI/models/loras/FrenchKiss_high.safetensors \
+  "https://civitai.red/api/download/models/2445168?type=Model&format=SafeTensor"
+echo "  ->  FrenchKiss_high..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
