@@ -132,6 +132,12 @@ curl -L \
   "https://civitai.red/api/download/models/2445176?type=Model&format=SafeTensor"
 echo "  ->  FrenchKiss_low..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Wan_Cumshot.safetensors \
+  "https://civitai.red/api/download/models/1602715?type=Model&format=SafeTensor"
+echo "  ->  Wan_Cumshot..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
