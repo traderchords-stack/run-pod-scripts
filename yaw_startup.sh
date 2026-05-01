@@ -138,6 +138,12 @@ curl -L \
   "https://civitai.red/api/download/models/1694292?type=Model&format=SafeTensor"
 echo "  ->  Fingering..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Pov Blowjob.safetensors \
+  "https://civitai.red/api/download/models/2021249?type=Model&format=SafeTensor"
+echo "  ->  Pov Blowjob..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
