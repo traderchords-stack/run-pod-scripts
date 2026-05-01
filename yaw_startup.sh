@@ -156,6 +156,12 @@ curl -L \
   "https://civitai.red/api/download/models/2517513?type=Model&format=SafeTensor"
 echo "  ->  Deepthroat_facefuck_v3High..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Deepthroat_facefuckv3low.safetensors \
+  "https://civitai.red/api/download/models/2517548?type=Model&format=SafeTensor"
+echo "  ->  Deepthroat_facefuckv3low..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
