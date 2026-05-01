@@ -122,21 +122,9 @@ echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/FrenchKiss_high.safetensors \
-  "https://civitai.red/api/download/models/2445168?type=Model&format=SafeTensor"
-echo "  ->  FrenchKiss_high..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/FrenchKiss_low.safetensors \
-  "https://civitai.red/api/download/models/2445176?type=Model&format=SafeTensor"
-echo "  ->  FrenchKiss_low..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Wan_Cumshot.safetensors \
-  "https://civitai.red/api/download/models/1602715?type=Model&format=SafeTensor"
-echo "  ->  Wan_Cumshot..."
+  -o /ComfyUI/models/loras/ExoticBreastMassage.safetensors \
+  "https://civitai.red/api/download/models/1663812?type=Model&format=SafeTensor"
+echo "  ->  ExoticBreastMassage..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
