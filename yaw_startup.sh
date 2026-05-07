@@ -122,45 +122,9 @@ echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/ExoticBreastMassage.safetensors \
-  "https://civitai.red/api/download/models/1663812?type=Model&format=SafeTensor"
-echo "  ->  ExoticBreastMassage..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Spanking.safetensors \
-  "https://civitai.red/api/download/models/1674260?type=Model&format=SafeTensor"
-echo "  ->  Spanking..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Fingering.safetensors \
-  "https://civitai.red/api/download/models/1694292?type=Model&format=SafeTensor"
-echo "  ->  Fingering..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Pov Blowjob.safetensors \
-  "https://civitai.red/api/download/models/2021249?type=Model&format=SafeTensor"
-echo "  ->  Pov Blowjob..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Female_Genitals_helper.safetensors \
-  "https://civitai.red/api/download/models/2012120?type=Model&format=SafeTensor"
-echo "  ->  Female_Genitals_helper..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Deepthroat_facefuck_v3High.safetensors \
-  "https://civitai.red/api/download/models/2517513?type=Model&format=SafeTensor"
-echo "  ->  Deepthroat_facefuck_v3High..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Deepthroat_facefuckv3low.safetensors \
-  "https://civitai.red/api/download/models/2517548?type=Model&format=SafeTensor"
-echo "  ->  Deepthroat_facefuckv3low..."
+  -o /ComfyUI/models/loras/FrenchKiss.safetensors \
+  "https://civitai.red/api/download/models/2156804?type=Model&format=SafeTensor"
+echo "  ->  FrenchKiss..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
