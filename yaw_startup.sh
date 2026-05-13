@@ -186,6 +186,24 @@ curl -L \
   "https://civitai.red/api/download/models/1573366?type=Model&format=SafeTensor"
 echo "  ->  Lez_makeout_t2v..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Wan_cumshot_i2v.safetensors \
+  "https://civitai.red/api/download/models/1602715?type=Model&format=SafeTensor"
+echo "  ->  Wan_cumshot_i2v..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Wan_cumshot_t2v_high.safetensors \
+  "https://civitai.red/api/download/models/2077123?type=Model&format=SafeTensor"
+echo "  ->  Wan_cumshot_t2v_high..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Wan_cumshot_t2v_low.safetensors \
+  "https://civitai.red/api/download/models/2077119?type=Model&format=SafeTensor"
+echo "  ->  Wan_cumshot_t2v_low..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
