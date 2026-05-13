@@ -216,6 +216,12 @@ curl -L \
   "https://civitai.red/api/download/models/2012120?type=Model&format=SafeTensor"
 echo "  ->  Female_Genital_help_i2v_t2v..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/WAN_POVBLOWJOB_I2V.safetensors \
+  "https://civitai.red/api/download/models/2021249?type=Model&format=SafeTensor"
+echo "  ->  WAN_POVBLOWJOB_I2V..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
