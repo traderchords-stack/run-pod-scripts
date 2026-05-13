@@ -126,6 +126,12 @@ curl -L \
   "https://civitai.red/api/download/models/2303113?type=Model&format=SafeTensor"
 echo "  ->  Dr34ml4y_t2v_NSFW_Low..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Dr34ml4y_T2V_NSFW_HIGH.safetensors \
+  "https://civitai.red/api/download/models/2303105?type=Model&format=SafeTensor"
+echo "  ->  Dr34ml4y_T2V_NSFW_HIGH..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
