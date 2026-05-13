@@ -204,6 +204,12 @@ curl -L \
   "https://civitai.red/api/download/models/2077119?type=Model&format=SafeTensor"
 echo "  ->  Wan_cumshot_t2v_low..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Anal_insertion.safetensors \
+  "https://civitai.red/api/download/models/2055564?type=Model&format=SafeTensor"
+echo "  ->  Anal_insertion..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
