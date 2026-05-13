@@ -138,6 +138,18 @@ curl -L \
   "https://civitai.red/api/download/models/2376143?type=Model&format=SafeTensor"
 echo "  ->  XXXSmoothmix_low..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/French_Kiss_High.safetensors \
+  "https://civitai.red/api/download/models/2445168?type=Model&format=SafeTensor"
+echo "  ->  French_Kiss_High..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/French_kiss_low.safetensors \
+  "https://civitai.red/api/download/models/2445176?type=Model&format=SafeTensor"
+echo "  ->  French_kiss_low..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
