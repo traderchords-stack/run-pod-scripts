@@ -234,6 +234,12 @@ curl -L \
   "https://civitai.red/api/download/models/1973462?type=Model&format=SafeTensor"
 echo "  ->  Wan_facial_cumonface_i2v_t2v..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Wan_Thiccum.safetensors \
+  "https://civitai.red/api/download/models/1860691?type=Model&format=SafeTensor"
+echo "  ->  Wan_Thiccum..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
