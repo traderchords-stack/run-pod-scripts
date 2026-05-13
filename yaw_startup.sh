@@ -150,6 +150,18 @@ curl -L \
   "https://civitai.red/api/download/models/2445176?type=Model&format=SafeTensor"
 echo "  ->  French_kiss_low..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Ultimate_bbc_deepthroat_high.safetensors \
+  "https://civitai.red/api/download/models/2370687?type=Model&format=SafeTensor"
+echo "  ->  Ultimate_bbc_deepthroat_high..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Ultimate_bbc_deepthroat_low.safetensors \
+  "https://civitai.red/api/download/models/2370744?type=Model&format=SafeTensor"
+echo "  ->  Ultimate_bbc_deepthroat_low..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
