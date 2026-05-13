@@ -76,27 +76,9 @@ echo "  ->  sh00tz_LN_75..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/facials_epoch_50.safetensors \
-  "https://civitai.com/api/download/models/1542133?type=Model&format=SafeTensor"
-echo "  ->  facials_epoch_50..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/wan-thiccum-v3.safetensors \
-  "https://civitai.com/api/download/models/1860691?type=Model&format=SafeTensor"
-echo "  ->  wan-thiccum-v3..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
   -o /ComfyUI/models/loras/breasts-wan-e7.safetensors \
   "https://civitai.com/api/download/models/2156804?type=Model&format=SafeTensor"
 echo "  ->  breasts-wan-e7..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/wan_cumshot_i2v.safetensors \
-  "https://civitai.com/api/download/models/1602715?type=Model&format=SafeTensor"
-echo "  ->  wan_cumshot_i2v..."
 
 curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
