@@ -276,6 +276,12 @@ curl -L \
   "https://civitai.red/api/download/models/1571626?type=Model&format=SafeTensor"
 echo "  ->  Ahegao_Face..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/POV_doggystyle.safetensors \
+  "https://civitai.red/api/download/models/1545040?type=Model&format=SafeTensor"
+echo "  ->  POV_doggystyle..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
