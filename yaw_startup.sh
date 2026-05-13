@@ -120,18 +120,6 @@ curl -L \
   "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-low-oral-insertion-v1.0.safetensors?download=true"
 echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
 
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Dr34ml4y_t2v_NSFW_Low.safetensors \
-  "https://civitai.red/api/download/models/2303113?type=Model&format=SafeTensor"
-echo "  ->  Dr34ml4y_t2v_NSFW_Low..."
-
-curl -L \
-  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
-  -o /ComfyUI/models/loras/Dr34ml4y_T2V_NSFW_HIGH.safetensors \
-  "https://civitai.red/api/download/models/2303105?type=Model&format=SafeTensor"
-echo "  ->  Dr34ml4y_T2V_NSFW_HIGH..."
-
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
