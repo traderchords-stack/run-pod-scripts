@@ -174,6 +174,18 @@ curl -L \
   "https://civitai.red/api/download/models/2191446?type=Model&format=SafeTensor"
 echo "  ->  Ultimate_deepthroat_low..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Lez_makeout_i2v.safetensors \
+  "https://civitai.red/api/download/models/1792573?type=Model&format=SafeTensor"
+echo "  ->  Lez_makeout_i2v..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Lez_makeout_t2v.safetensors \
+  "https://civitai.red/api/download/models/1573366?type=Model&format=SafeTensor"
+echo "  ->  Lez_makeout_t2v..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
