@@ -240,6 +240,18 @@ curl -L \
   "https://civitai.red/api/download/models/1860691?type=Model&format=SafeTensor"
 echo "  ->  Wan_Thiccum..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Fingering_for_wan_i2v.safetensors \
+  "https://civitai.red/api/download/models/1694292?type=Model&format=SafeTensor"
+echo "  ->  Fingering_for_wan_i2v..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Fingering_for_wan_t2v.safetensors \
+  "https://civitai.red/api/download/models/1633278?type=Model&format=SafeTensor"
+echo "  ->  Fingering_for_wan_t2v..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
