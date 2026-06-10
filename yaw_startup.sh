@@ -93,16 +93,6 @@ curl -L \
 echo "  ->  wan_2_2_anime_cumshot_aesthetics_high..."
 
 curl -L \
-  -o /ComfyUI/models/loras/wan2.2-i2v-high-oral-insertion-v1.0.safetensors \
-  "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-high-oral-insertion-v1.0.safetensors?download=true"
-echo "  ->  wan2.2-i2v-high-oral-insertion-v1.0..."
-
-curl -L \
-  -o /ComfyUI/models/loras/wan2.2-i2v-low-oral-insertion-v1.0.safetensors \
-  "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-low-oral-insertion-v1.0.safetensors?download=true"
-echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
-
-curl -L \
   -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
   -o /ComfyUI/models/loras/Dreamlay_NSFW_T2V_LOW.safetensors \
   "https://civitai.red/api/download/models/2303113?type=Model&format=SafeTensor"
@@ -287,6 +277,46 @@ curl -L \
   -o /ComfyUI/models/loras/Facials_cumonface_t2v_i2v.safetensors \
   "https://civitai.red/api/download/models/1542133?type=Model&format=SafeTensor"
 echo "  ->  Facials_cumonface_t2v_i2v..."
+
+curl -L \
+  -o /ComfyUI/models/loras/wan2.2-i2v-high-oral-insertion-v1.0.safetensors \
+  "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-high-oral-insertion-v1.0.safetensors?download=true"
+echo "  ->  wan2.2-i2v-high-oral-insertion-v1.0..."
+
+curl -L \
+  -o /ComfyUI/models/loras/wan2.2-i2v-low-oral-insertion-v1.0.safetensors \
+  "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-low-oral-insertion-v1.0.safetensors?download=true"
+echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/breast_slider_low.safetensors \
+  "https://civitai.red/api/download/models/2235403?fileId=2128297"
+echo "  ->  breast_slider_low..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/breast_slider_high.safetensors \
+  "https://civitai.red/api/download/models/2235351?fileId=2128288"
+echo "  ->  breast_slider_high..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Breasts_large_areolas.safetensors \
+  "https://civitai.red/api/download/models/2218410?fileId=2111415"
+echo "  ->  Breasts_large_areolas..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/Reverse_cowgirl_high_i2v.safetensors \
+  "https://civitai.red/api/download/models/2156392?fileId=2049798"
+echo "  ->  Reverse_cowgirl_high_i2v..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/reverse_cowgirl_low_i2v.safetensors \
+  "https://civitai.red/api/download/models/2156435?fileId=2049795"
+echo "  ->  reverse_cowgirl_low_i2v..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
