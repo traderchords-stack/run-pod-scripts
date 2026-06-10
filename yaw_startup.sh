@@ -318,6 +318,18 @@ curl -L \
   "https://civitai.red/api/download/models/2156435?fileId=2049795"
 echo "  ->  reverse_cowgirl_low_i2v..."
 
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/reverse_cowgirl_high_t2v.safetensors \
+  "https://civitai.red/api/download/models/2188529?fileId=2081482"
+echo "  ->  reverse_cowgirl_high_t2v..."
+
+curl -L \
+  -H "Authorization: Bearer ${CIVITAI_TOKEN}" \
+  -o /ComfyUI/models/loras/reverse_cowgirl_low_t2v.safetensors \
+  "https://civitai.red/api/download/models/2188552?fileId=2081506"
+echo "  ->  reverse_cowgirl_low_t2v..."
+
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
 echo ""
