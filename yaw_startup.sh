@@ -21,6 +21,21 @@ echo "============================================================"
 echo ""
 # --- Directories ---
 mkdir -p /ComfyUI/models/loras
+
+# --- Diffusion models (Bernini-R) ---
+DIFF_DIR="/ComfyUI/models/diffusion_models"
+mkdir -p "$DIFF_DIR"
+
+download_model() {
+  # $1 = url, $2 = output path
+  [ -f "$2" ] && { echo "  ->  already exists: $(basename "$2")"; return 0; }
+  echo "  ->  downloading $(basename "$2")..."
+  curl -L -o "$2" "$1"
+}
+
+download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_high_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_high_noise_fp16.safetensors"
+download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_low_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_low_noise_fp16.safetensors"
+
 # Pull CivitAI token from RunPod environment variable
 # Set this in your pod's Environment Variables as: civitai_token = your_token_here
 CIVITAI_TOKEN="${civitai_token}"
@@ -29,32 +44,23 @@ if [ -z "$CIVITAI_TOKEN" ]; then
   echo "CivitAI LoRA downloads will fail. Set it in your pod's environment variables."
   echo ""
 fi
-# --- RH Bernini Custom Node ---
-if [ ! -d "/ComfyUI/custom_nodes/ComfyUI-RH-Bernini" ]; then
-    echo "Installing ComfyUI-RH-Bernini..."
-    cd /ComfyUI/custom_nodes
-    git clone https://github.com/RH-RunningHub/ComfyUI-RH-Bernini.git
 
-    if [ -f "/ComfyUI/custom_nodes/ComfyUI-RH-Bernini/requirements.txt" ]; then pip install -r /ComfyUI/custom_nodes/ComfyUI-RH-Bernini/requirements.txt
+# ============================================================
+#  CUSTOM NODES
+# ============================================================
+clone_node() {
+  # $1 = folder name, $2 = git url
+  if [ -d "$1" ]; then
+    echo "  ->  already present: $1"
+  else
+    echo "  ->  cloning $1..."
+    git clone "$2" "$1"
+  fi
+}
 
-    fi
-else
-    echo "ComfyUI-RH-Bernini already installed."
-fi
-
-
-
-mkdir -p /ComfyUI/models/diffusion_models
-
-curl -L \
-  -o /ComfyUI/models/diffusion_models/Wan22_Bernini_HIGH_fp16.safetensors \
-  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Bernini/Wan22_Bernini_HIGH_fp16.safetensors?download=true"
-echo "  ->  Wan22_Bernini_HIGH_fp16..."
-
-curl -L \
-  -o /ComfyUI/models/diffusion_models/Wan22_Bernini_LOW_fp16.safetensors \
-  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Bernini/Wan22_Bernini_LOW_fp16.safetensors?download=true"
-echo "  ->  Wan22_Bernini_LOW_fp16..."
+cd /ComfyUI/custom_nodes/ || exit 1
+clone_node ComfyUI-RH-Bernini     "https://github.com/RH-RunningHub/ComfyUI-RH-Bernini.git"
+clone_node ComfyUI-ColorCorrectGPU "https://github.com/boobkake22/ComfyUI-ColorCorrectGPU.git"
 
 
 # ============================================================
