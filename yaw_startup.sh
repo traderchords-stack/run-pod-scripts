@@ -29,6 +29,34 @@ if [ -z "$CIVITAI_TOKEN" ]; then
   echo "CivitAI LoRA downloads will fail. Set it in your pod's environment variables."
   echo ""
 fi
+# --- RH Bernini Custom Node ---
+if [ ! -d "/ComfyUI/custom_nodes/ComfyUI-RH-Bernini" ]; then
+    echo "Installing ComfyUI-RH-Bernini..."
+    cd /ComfyUI/custom_nodes
+    git clone https://github.com/RH-RunningHub/ComfyUI-RH-Bernini.git
+
+    if [ -f "/ComfyUI/custom_nodes/ComfyUI-RH-Bernini/requirements.txt" ]; then pip install -r /ComfyUI/custom_nodes/ComfyUI-RH-Bernini/requirements.txt
+
+    fi
+else
+    echo "ComfyUI-RH-Bernini already installed."
+fi
+
+
+
+mkdir -p /ComfyUI/models/diffusion_models
+
+curl -L \
+  -o /ComfyUI/models/diffusion_models/Wan22_Bernini_HIGH_fp16.safetensors \
+  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Bernini/Wan22_Bernini_HIGH_fp16.safetensors?download=true"
+echo "  ->  Wan22_Bernini_HIGH_fp16..."
+
+curl -L \
+  -o /ComfyUI/models/diffusion_models/Wan22_Bernini_LOW_fp16.safetensors \
+  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Bernini/Wan22_Bernini_LOW_fp16.safetensors?download=true"
+echo "  ->  Wan22_Bernini_LOW_fp16..."
+
+
 # ============================================================
 #  ADD YOUR CUSTOM LORAS BELOW THIS LINE
 
@@ -329,11 +357,6 @@ curl -L \
   -o /ComfyUI/models/loras/wan2.2-i2v-low-oral-insertion-v1.0.safetensors \
   "https://huggingface.co/rahul7star/wan2.2Lora/resolve/1d1e553d07c1bb0e91765752413c4857e31df299/wan2.2/wan2.2-i2v-low-oral-insertion-v1.0.safetensors?download=true"
 echo "  ->  wan2.2-i2v-low-oral-insertion-v1.0..."
-
-curl -L \
-  -o /ComfyUI/models/loras/Bernini_low.safetensors \
-  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Bernini/Wan22_Bernini_LOW_fp16.safetensors%22?download=true"
-echo "  ->  Bernini_low..."
 
 ADD YOUR CUSTOM LORAS ABOVE THIS LINE
 # ============================================================
