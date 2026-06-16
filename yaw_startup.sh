@@ -7,22 +7,24 @@
 #  YAW template's custom script environment variable.
 #
 #  The YAW template already downloads the base Wan 2.2 models,
-#  so this script is just for YOUR custom LoRAs on top of that.
+#  so this script is just for YOUR custom models/nodes/LoRAs.
 #
-#  HOW TO ADD A LORA:
-#  - From CivitAI: copy the curl block below and update the
-#    model ID and output filename
-#  - From HuggingFace: use the hf download command pattern
+#  Required pod Environment Variables:
+#    civitai_token = <your CivitAI API token>
+#    hf_token      = <your HuggingFace read token>
 # ============================================================
 echo ""
 echo "============================================================"
 echo "  Running YAW Custom Startup Script..."
 echo "============================================================"
 echo ""
+
 # --- Directories ---
 mkdir -p /ComfyUI/models/loras
 
-# --- Diffusion models (Bernini-R) ---
+# ============================================================
+#  DIFFUSION MODELS (Bernini-R)
+# ============================================================
 DIFF_DIR="/ComfyUI/models/diffusion_models"
 mkdir -p "$DIFF_DIR"
 
@@ -35,15 +37,6 @@ download_model() {
 
 download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_high_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_high_noise_fp16.safetensors"
 download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_low_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_low_noise_fp16.safetensors"
-
-# Pull CivitAI token from RunPod environment variable
-# Set this in your pod's Environment Variables as: civitai_token = your_token_here
-CIVITAI_TOKEN="${civitai_token}"
-if [ -z "$CIVITAI_TOKEN" ]; then
-  echo "WARNING: civitai_token environment variable not set."
-  echo "CivitAI LoRA downloads will fail. Set it in your pod's environment variables."
-  echo ""
-fi
 
 # ============================================================
 #  CUSTOM NODES
@@ -59,9 +52,36 @@ clone_node() {
 }
 
 cd /ComfyUI/custom_nodes/ || exit 1
-clone_node ComfyUI-RH-Bernini     "https://github.com/RH-RunningHub/ComfyUI-RH-Bernini.git"
+clone_node ComfyUI-RH-Bernini      "https://github.com/RH-RunningHub/ComfyUI-RH-Bernini.git"
 clone_node ComfyUI-ColorCorrectGPU "https://github.com/boobkake22/ComfyUI-ColorCorrectGPU.git"
 
+# ============================================================
+#  PRIVATE LORAS (HuggingFace, authenticated)
+# ============================================================
+HF_TOKEN="${hf_token}"
+if [ -z "$HF_TOKEN" ]; then
+  echo "WARNING: hf_token not set — private LoRA downloads will fail."
+fi
+
+download_private_lora() {
+  # $1 = full resolve URL, $2 = output filename
+  local out="/ComfyUI/models/loras/$2"
+  [ -f "$out" ] && { echo "  ->  already exists: $2"; return 0; }
+  echo "  ->  downloading (private) $2..."
+  curl -L -H "Authorization: Bearer ${HF_TOKEN}" -o "$out" "$1"
+}
+
+download_private_lora "https://huggingface.co/traderchords/KCharacter/resolve/main/WAN2.2_kasia_t2v_Character_HighNoise_v1.safetensors" "WAN2.2_kasia_t2v_Character_HighNoise_v1.safetensors"
+download_private_lora "https://huggingface.co/traderchords/KCharacter/resolve/main/WAN2.2_kasia_t2v_Character_LowNoise_v1.safetensors" "WAN2.2_kasia_t2v_Character_LowNoise_v1.safetensors"
+
+# --- CivitAI token ---
+# Set this in your pod's Environment Variables as: civitai_token = your_token_here
+CIVITAI_TOKEN="${civitai_token}"
+if [ -z "$CIVITAI_TOKEN" ]; then
+  echo "WARNING: civitai_token environment variable not set."
+  echo "CivitAI LoRA downloads will fail. Set it in your pod's environment variables."
+  echo ""
+fi
 
 # ============================================================
 #  ADD YOUR CUSTOM LORAS BELOW THIS LINE
