@@ -35,8 +35,8 @@ download_model() {
   curl -L -o "$2" "$1"
 }
 
-download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_high_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_high_noise_fp16.safetensors"
-download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_low_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_low_noise_fp16.safetensors"
+#download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_high_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_high_noise_fp16.safetensors"
+#download_model "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_low_noise_fp16.safetensors" "$DIFF_DIR/wan2.2_bernini_r_low_noise_fp16.safetensors"
 
 # ============================================================
 #  CUSTOM NODES
